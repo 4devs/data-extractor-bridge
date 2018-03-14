@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="FDevs\DataExtractor\Extension\Data\ChainExtension"/>
+        <service id="FDevs\DataExtractor\Extension\Target\ChainExtension"/>
+        <service id="f_devs_data_extractor.container_target_extension" class="FDevs\Container\ServiceLocator"/>
+        <service id="f_devs_data_extractor.container_data_extension" class="FDevs\Container\ServiceLocator"/>
+
+    </services>
+
+</container>

@@ -1,0 +1,33 @@
+{
+  "name": "fdevs/data-extractor-bridge",
+  "type": "library",
+  "license": "MIT",
+  "description": "4devs Data Extractor Bridge",
+  "keywords": [],
+  "authors": [
+    {
+      "name": "Andrey Samusev",
+      "email": "andrey_simfi@list.ru",
+      "homepage": "http://andrey.4devs.io"
+    },
+    {
+      "name": "4devs Community",
+      "homepage": "https://github.com/4devs/data-extractor-bridge/contributors"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.8",
+    "fdevs/data-extractor": "^0.1"
+  },
+  "require-dev": {
+    "fdevs/pipeline-bridge": "^0.1"
+  },
+  "suggest": {
+    "fdevs/pipeline-bridge": "use with pipeline data extension"
+  },
+  "autoload": {
+    "psr-4": {
+      "FDevs\\Bridge\\DataExtractor\\": ""
+    }
+  }
+}

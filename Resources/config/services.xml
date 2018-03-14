@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <service id="FDevs\DataExtractor\ExtractorInterface" alias="FDevs\DataExtractor\Extractor"/>
+
+        <service id="FDevs\DataExtractor\Extractor">
+            <argument type="service" key="$extractRegistry" id="FDevs\DataExtractor\Type\ExtractRegistryInterface"/>
+            <argument type="service" key="$extractFactoryRegistry" id="f_devs_data_extractor.container_extract_factory"/>
+            <argument type="service" key="$targetExtensions" id="f_devs_data_extractor.container_target_extension"/>
+            <argument type="service" key="$dataExtensions" id="f_devs_data_extractor.container_data_extension"/>
+        </service>
+
+    </services>
+
+</container>
