@@ -17,10 +17,10 @@
   ],
   "require": {
     "php": ">=7.0.8",
-    "fdevs/data-extractor": "^0.1"
+    "fdevs/data-extractor": "~0.1"
   },
   "require-dev": {
-    "fdevs/pipeline-bridge": "^0.1"
+    "fdevs/pipeline-bridge": "~0.1"
   },
   "suggest": {
     "fdevs/pipeline-bridge": "use with pipeline data extension"
